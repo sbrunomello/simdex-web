@@ -1,15 +1,15 @@
 <div class="container">
-    <div class="row justify-content-center"> <!-- Centralize o card -->
+    <div class="row justify-content-center">
       <div class="col-md-6">
         <div class="card login-card">
           <div class="card-body">
-            <h2 class="card-title">Bem-vindo</h2>
+            <h2 class="card-title">simdex</h2>
             <form (ngSubmit)="onSubmit()">
-              <div class="form-group input-background"> <!-- Adicione a classe CSS "input-background" -->
+              <div class="form-group">
                 <label for="username">Nome de Usuário</label>
                 <input type="text" id="username" name="username" [(ngModel)]="user.username" class="form-control" required>
               </div>
-              <div class="form-group input-background"> <!-- Adicione a classe CSS "input-background" -->
+              <div class="form-group">
                 <label for="password">Senha</label>
                 <input type="password" id="password" name="password" [(ngModel)]="user.password" class="form-control" required>
               </div>
