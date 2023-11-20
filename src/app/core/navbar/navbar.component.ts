@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+
+
+  connectMetamask() {
+    //this.contractService.connectAccount();
+  }
+
 }

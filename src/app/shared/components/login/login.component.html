@@ -1,0 +1,17 @@
+<div class="card text-center sign-card">
+  <div class="card-body text-primary">
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Email address</label>
+        <input class="form-control" placeholder="email@email.com" [(ngModel)]="user.username"><br>
+      </div>
+
+      <div class="mb3">
+        <label class="form-label">Password</label>
+        <input class="form-control" type="password" placeholder="6-12 characters" [(ngModel)]="user.password"><br>
+      </div>
+      <button type="button" class="btn btn-success" (click)="onSubmit()">Login</button><br>
+      <button type="button" class="btn btn-outline-success" routerLink="/register">Register</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+#navbar {
+    background-color: #800080; /* Cor de fundo roxa */
+    color: #fff; /* Cor do texto */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.app-title {
+  font-size: 24px; /* Tamanho da fonte do título */
+  font-weight: bold; /* Peso da fonte */
+  margin-left: 20px; /* Margem à esquerda do título */
+}
+  
+.spacer {
+  flex: 1;
+}
+
+.sign {
+  color: #fff; /* Cor do texto dos botões */
+  font-weight: bold; /* Peso da fonte dos botões */
+  text-transform: uppercase; /* Transforma o texto dos botões em maiúsculas */
+  margin-right: 10px; /* Margem à direita dos botões */
+}
+  
+.sign:hover {
+  background-color: #9932CC; /* Cor de fundo quando o mouse passa por cima dos botões */
+}
+  
