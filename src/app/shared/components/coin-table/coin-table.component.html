@@ -3,20 +3,44 @@
     <table class="table">
       <thead>
         <tr>
-          <th>ID</th>
+          <th>Img</th>
           <th>Symbol</th>
           <th>Name</th>
           <th>Current Price</th>
-          <!-- Adicione mais colunas conforme necessário -->
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let coin of coins">
-          <td>{{ coin.id }}</td>
+          <td><img [src]="coin.image" alt="{{ coin.name }} Image" width="50" height="50"></td>
           <td>{{ coin.symbol }}</td>
           <td>{{ coin.name }}</td>
           <td>{{ coin.current_price | currency:'USD':'symbol':'1.2-2' }}</td>
-          <!-- Adicione mais colunas conforme necessário -->
+          <td>{{ coin.market_cap }}</td>
+          <td>{{ coin.market_cap_rank }}</td>
+          <td>{{ coin.fully_diluted_valuation }}</td>
+          <td>{{ coin.total_volume }}</td>
+          <td>{{ coin.high_24h }}</td>
+          <td>{{ coin.low_24h }}</td>
+          <td>{{ coin.price_change_24h }}</td>
+          <td>{{ coin.price_change_percentage_24h }}</td>
+          <td>{{ coin.market_cap_change_24h }}</td>
+          <td>{{ coin.market_cap_change_percentage_24h }}</td>
+          <td>{{ coin.circulating_supply }}</td>
+          <td>{{ coin.total_supply }}</td>
+          <td>{{ coin.max_supply }}</td>
         </tr>
       </tbody>
     </table>
