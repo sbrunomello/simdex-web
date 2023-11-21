@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="table-container card">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Symbol</th>
+          <th>Name</th>
+          <th>Current Price</th>
+          <!-- Adicione mais colunas conforme necessário -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let coin of coins">
+          <td>{{ coin.id }}</td>
+          <td>{{ coin.symbol }}</td>
+          <td>{{ coin.name }}</td>
+          <td>{{ coin.current_price | currency:'USD':'symbol':'1.2-2' }}</td>
+          <!-- Adicione mais colunas conforme necessário -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

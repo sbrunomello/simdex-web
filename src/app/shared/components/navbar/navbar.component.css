@@ -1,9 +1,9 @@
-#navbar {
-    background-color: #800080; /* Cor de fundo roxa */
-    color: #fff; /* Cor do texto */
-    display: flex;
-    justify-content: space-between;
-  }
+.navbar {
+  background-color: #301860; /* Cor de fundo roxa */
+  color: #fff; /* Cor do texto */
+  display: flex;
+  justify-content: space-between;
+}
   
 .app-title {
   font-size: 24px; /* Tamanho da fonte do título */

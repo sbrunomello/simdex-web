@@ -1,0 +1,6 @@
+.footer {
+    background-color: #301860; /* Cor de fundo roxa */
+    color: #fffefe!important; /* Cor do texto */
+    display: flex;
+    justify-content: space-between;
+  }

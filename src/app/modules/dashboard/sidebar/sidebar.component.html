@@ -1,0 +1,12 @@
+<nav class="navbar sidebar-slider" [class.sidebar-slide-in]="sidebarShow"
+  (click)="sidebarShow = !sidebarShow" appOutsideClick (outsideClick)="handleOutsideClick()">
+  <div class="sidebar-content">
+    <h2>Sidebar</h2>
+    <div>Home Page</div>
+    <div>About Us</div>
+    <div>Services</div>
+    <div>Prices</div>
+    <div>Downloads</div>
+    <div>Contact Us</div>
+  </div>
+</nav>

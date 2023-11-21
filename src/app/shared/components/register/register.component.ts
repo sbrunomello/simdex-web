@@ -25,7 +25,7 @@ export class RegisterComponent {
         // Handle a successful registration here
         console.log(response);
         // Redirecionar para a página de dashboard ou para onde desejar após o registro bem-sucedido
-        this.router.navigate(['/dashboard']);
+        this.router.navigate(['app/dashboard']);
       },
       (error) => {
         // Handle registration error here, como exibir uma mensagem de erro.

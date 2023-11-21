@@ -1,13 +1,14 @@
-<mat-card>
-    <mat-card-title>Meu Painel</mat-card-title>
-    <mat-card-content>
+<aside>
+  <app-sidebar></app-sidebar>
+</aside>
+<div class="card">
+    <label>Meu Painel</label>
+    <div>
       <p>Este é o conteúdo do painel.</p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button (click)="onButtonClick()">Clique em mim</button>
-      <button mat-icon-button>
-        <mat-icon>favorite</mat-icon>
-      </button>
-    </mat-card-actions>
-  </mat-card>
+    </div>
+    <div>
+      <button  (click)="onButtonClick()">Clique em mim</button>
+      <button pButton pRipple label="Submit" class="p-button-success">KKK</button>
+    </div>
+</div>
   

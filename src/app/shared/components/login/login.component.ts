@@ -22,7 +22,7 @@ export class LoginComponent {
 
     // Exemplo de redirecionamento após um login bem-sucedido:
     if (/* Lógica de autenticação bem-sucedida */ 1 ==1 ) {
-      this.router.navigate(['/dashboard']); // Redirecionar para a página de dashboard ou para onde desejar.
+      this.router.navigate(['app/dashboard']); // Redirecionar para a página de dashboard ou para onde desejar.
     } else {
       // Lógica para lidar com o login malsucedido, como exibir uma mensagem de erro.
     }
