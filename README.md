@@ -1,29 +1,111 @@
-# SimdexWeb
+# Simdex Web – Angular UI for Simulated DEX Platform
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+**Simdex Web** is the frontend application for the [Simdex](https://github.com/sbrunomello/simdex) platform – a simulation of a decentralized cryptocurrency exchange. Built with Angular, it offers a responsive dashboard where users can register, log in, view real-time prices, and interact with coin data in a realistic exchange layout.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🌐 Live Features
 
-## Code scaffolding
+- 🧾 **Login and Registration** (connected to Spring Boot backend)
+- 📈 **Coin Price Tracker** with live data
+- 🪙 **Coin Table** for top market pairs
+- 🔄 Modular UI structure with dashboard, sidebar, and components
+- 🧪 Designed for realistic crypto UI simulation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🛠 Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular `^16`
+- TypeScript
+- SCSS / CSS
+- RxJS (reactive state)
+- Angular Routing
+- Capacitor-ready (for mobile builds)
+- RESTful communication with backend API
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🧩 Project Structure Highlights
 
-## Running end-to-end tests
+```
+/src/app
+│
+├── core/services
+│   ├── auth.service.ts        → Login/registration logic
+│   └── coin.service.ts        → Fetches coin price data
+│
+├── modules/dashboard
+│   ├── dashboard.component.ts
+│   └── sidebar/               → App navigation
+│
+├── shared/components
+│   ├── coin-price/            → Displays price from API
+│   ├── coin-table/            → Lists crypto pairs
+│   ├── login/                 → Login form
+│   ├── register/              → Registration form
+│   ├── navbar/                → Top navigation
+│   ├── footer/                → Footer content
+│
+├── directives/
+│   └── outside-click.directive.ts → Detects external click (e.g. dropdown)
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+> Components follow modular and testable Angular best practices.
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## ▶️ How to Run Locally
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsbrunomello%2Fsimdex-web&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=repo+views&edge_flat=true)](https://hits.seeyoufarm.com)
+### Prerequisites
+
+- Node.js (v18+ recommended)
+- Angular CLI (`npm install -g @angular/cli`)
+- Backend API running ([Simdex Backend](https://github.com/sbrunomello/simdex))
+
+### Steps
+
+```bash
+git clone https://github.com/sbrunomello/simdex-web.git
+cd simdex-web
+npm install
+ng serve
+```
+
+Access the app at:  
+`http://localhost:4200`
+
+---
+
+## 💡 API Integration
+
+All data is fetched from the Spring Boot backend running at `http://localhost:8080`. It includes:
+
+- `POST /auth/register`
+- `POST /auth/login`
+- `GET /api/v2/price` → Real-time BTC price (via CMC)
+
+---
+
+## 🧪 Development Notes
+
+- Supports component unit testing with Karma + Jasmine
+- Includes styles split per component (CSS or SCSS)
+- Easy to extend with lazy-loaded modules
+
+---
+
+## 🚀 Future Roadmap
+
+- [ ] Wallet simulation with fake balance
+- [ ] Token buy/sell interaction (demo only)
+- [ ] Visual charts with TradingView or Chart.js
+- [ ] Internationalization (i18n)
+- [ ] PWA support and mobile build via Capacitor
+
+---
+
+## 📬 Contact
+
+- [GitHub](https://github.com/sbrunomello)  
+Developed with by Mello
